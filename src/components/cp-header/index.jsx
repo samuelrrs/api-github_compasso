@@ -9,7 +9,7 @@ const Header = () => {
   const handleHome = () => {
     window.open(
       "https://github.com/samuelrrs/",
-      "_blank" // <- This is what makes it open in a new window.
+      "_blank"
     );
   };
 
