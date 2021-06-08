@@ -97,7 +97,10 @@ const ResultsDetails = () => {
         {activeListRepo ? (
           <ul className={styles.resultsDetails__list}>
             {repos.map((repo) => (
-              <Accordion className={styles.resultsDetails__accordion}>
+              <Accordion
+                className={styles.resultsDetails__accordion}
+                key={repo.id}
+              >
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1a-content"
@@ -117,7 +120,10 @@ const ResultsDetails = () => {
         {activeListStarred ? (
           <ul className={styles.resultsDetails__list}>
             {starredRepo.map((repo) => (
-              <Accordion className={styles.resultsDetails__accordion}>
+              <Accordion
+                className={styles.resultsDetails__accordion}
+                key={repo.id}
+              >
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1a-content"

@@ -1,6 +1,4 @@
 import Header from "./components/cp-header";
-/* import ResultsDetails from "./pages/pg-results-details";
-import SearchPage from "./pages/pg-search-page"; */
 import Routes from "./routes/routes";
 
 import "./styles/global.css";
