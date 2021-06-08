@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/cp-header";
+/* import ResultsDetails from "./pages/pg-results-details";
+import SearchPage from "./pages/pg-search-page"; */
+import Routes from "./routes/routes";
 
+import "./styles/global.css";
+
+import GitUserProvider from "./context/GitUserData";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GitUserProvider>
+      <div className="App">
+        <Header />
+        <Routes />
+      </div>
+    </GitUserProvider>
   );
 }
 

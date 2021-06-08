@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  font-size: 14px;
+  max-width: 100%;
+  -webkit-font-smoothing: antialiased !important;
+  font-family: "Roboto", sans-serif;
+  background-image: url("https://i.imgur.com/CYbMsJK.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
