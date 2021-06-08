@@ -42,14 +42,6 @@ Rodar o comando : yarn start ou npm run
 - [Yarn](https://yarnpkg.com/) - Gerente de Dependência
 - [Material UI](https://material-ui.com/pt/) - Biblioteca de design
 
-## 🛠 💻 Para acessar o projeto funcional :
-
-<p>
-
-Clique aqui > [ApiGithub](https://api-github-samuelrrs.netlify.app/)
-
-<p>
-
 ## ✒️ Autores
 
 - **Desenvolvedor** - [Samuel Ribeiro](https://github.com/samuelrrs)
