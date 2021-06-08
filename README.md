@@ -2,7 +2,7 @@
 
 - Pesquise por usuário ou repositório
 - Navegue até os detalhes quando se tratar do usuário
-- Vá de um usuário ao outro, trocando o username na URL
+- Vá de um usuário ao outro, trocando o username na URL localmente
 
 ## 🚀 Começando
 
@@ -49,8 +49,6 @@ Rodar o comando : yarn start ou npm run
 Clique aqui > [ApiGithub](https://api-github-samuelrrs.netlify.app/)
 
 <p>
-
-(Devido ao próprio heroku, a primeira vez que você clicar no link ele pode não funcionar, aguarde alguns minutos e recarregue a página.)
 
 ## ✒️ Autores
 
