@@ -29,6 +29,9 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     gap: 15,
     color: COLORS.WHITE,
+    "@media (max-width: 1050px)": {
+      flexDirection: "column",
+    },
   },
   repoResults__accordion: {
     backgroundColor: COLORS.ACCORDION_COLOR,
