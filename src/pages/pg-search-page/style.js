@@ -29,7 +29,7 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     flexDirection: "column",
     gap: 20,
-    width: "50%",
+    width: "35%",
     backgroundColor: COLORS.BG_TRANSPARENT,
     borderRadius: 5,
     padding: 10,
