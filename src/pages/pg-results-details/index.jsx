@@ -13,6 +13,9 @@ import SearchIcon from "@material-ui/icons/Search";
 import api from "../../services/api";
 import useStyles from "./style";
 import { useHistory } from "react-router";
+import UsbIcon from "@material-ui/icons/Usb";
+import ComputerIcon from "@material-ui/icons/Computer";
+import StarIcon from "@material-ui/icons/Star";
 
 const ResultsDetails = () => {
   const styles = useStyles();
@@ -108,8 +111,31 @@ const ResultsDetails = () => {
                 >
                   <Typography>{repo.name}</Typography>
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails
+                  className={styles.resultsDetails__accordionDetails}
+                >
                   <Typography>{repo.description}</Typography>
+
+                  <div className={styles.resultsDetails__accordionRepoInfo}>
+                    <Typography
+                      className={styles.resultsDetails__iconContainer}
+                    >
+                      <StarIcon />
+                      {repo.stargazers_count}
+                    </Typography>
+                    <Typography
+                      className={styles.resultsDetails__iconContainer}
+                    >
+                      <UsbIcon />
+                      {repo.forks_count}
+                    </Typography>
+                    <Typography
+                      className={styles.resultsDetails__iconContainer}
+                    >
+                      <ComputerIcon />
+                      {repo.language}
+                    </Typography>
+                  </div>
                 </AccordionDetails>
               </Accordion>
             ))}
@@ -131,8 +157,31 @@ const ResultsDetails = () => {
                 >
                   <Typography>{repo.name}</Typography>
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails
+                  className={styles.resultsDetails__accordionDetails}
+                >
                   <Typography>{repo.description}</Typography>
+
+                  <div className={styles.resultsDetails__accordionRepoInfo}>
+                    <Typography
+                      className={styles.resultsDetails__iconContainer}
+                    >
+                      <StarIcon />
+                      {repo.stargazers_count}
+                    </Typography>
+                    <Typography
+                      className={styles.resultsDetails__iconContainer}
+                    >
+                      <UsbIcon />
+                      {repo.forks_count}
+                    </Typography>
+                    <Typography
+                      className={styles.resultsDetails__iconContainer}
+                    >
+                      <ComputerIcon />
+                      {repo.language}
+                    </Typography>
+                  </div>
                 </AccordionDetails>
               </Accordion>
             ))}

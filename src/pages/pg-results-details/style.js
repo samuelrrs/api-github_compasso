@@ -85,6 +85,25 @@ const useStyles = makeStyles(() => ({
       color: COLORS.WHITE,
     },
   },
+  resultsDetails__accordionDetails: {
+    display: "flex",
+    flexDirection: "column",
+    gap: 15,
+  },
+  resultsDetails__accordionRepoInfo: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 60,
+  },
+  resultsDetails__iconContainer: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 10,
+  },
 }));
 
 export default useStyles;

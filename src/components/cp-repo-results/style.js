@@ -40,6 +40,25 @@ const useStyles = makeStyles(() => ({
   repoResults__accordionDescription: {
     cursor: "pointer",
   },
+  repoResults__accordionDetails: {
+    display: "flex",
+    flexDirection: "column",
+    gap: 15,
+  },
+  repoResults__accordionRepoInfo: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 60,
+  },
+  repoResults__iconContainer: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 10,
+  },
 }));
 
 export default useStyles;

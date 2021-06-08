@@ -8,7 +8,9 @@ import {
 import React from "react";
 import useStyles from "./style";
 import GitHubIcon from "@material-ui/icons/GitHub";
-
+import StarIcon from "@material-ui/icons/Star";
+import UsbIcon from "@material-ui/icons/Usb";
+import ComputerIcon from "@material-ui/icons/Computer";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const RepoResults = ({ repoData }) => {
@@ -37,13 +39,27 @@ const RepoResults = ({ repoData }) => {
             >
               <Typography>{repoData.data.full_name}</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails className={styles.repoResults__accordionDetails}>
               <Typography
                 onClick={sendToRepositorie}
                 className={styles.repoResults__accordionDescription}
               >
                 {repoData.data.description}
               </Typography>
+              <div className={styles.repoResults__accordionRepoInfo}>
+                <Typography className={styles.repoResults__iconContainer}>
+                  <StarIcon />
+                  {repoData.data.stargazers_count}
+                </Typography>
+                <Typography className={styles.repoResults__iconContainer}>
+                  <UsbIcon />
+                  {repoData.data.forks_count}
+                </Typography>
+                <Typography className={styles.repoResults__iconContainer}>
+                  <ComputerIcon />
+                  {repoData.data.language}
+                </Typography>
+              </div>
             </AccordionDetails>
           </Accordion>
         </div>
