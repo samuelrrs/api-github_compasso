@@ -14,6 +14,11 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 const RepoResults = ({ repoData }) => {
   const styles = useStyles();
 
+  const sendToRepositorie = () => {
+    window.open(`${repoData.data.html_url}`, "_blank");
+  };
+
+  console.log(repoData.data);
   return (
     <div className={styles.repoResults__container}>
       <div className={styles.repoResults__info}>
@@ -34,7 +39,12 @@ const RepoResults = ({ repoData }) => {
               <Typography>{repoData.data.full_name}</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>{repoData.data.description}</Typography>
+              <Typography
+                onClick={sendToRepositorie}
+                className={styles.repoResults__accordionDescription}
+              >
+                {repoData.data.description}
+              </Typography>
             </AccordionDetails>
           </Accordion>
         </div>

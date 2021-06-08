@@ -37,6 +37,9 @@ const useStyles = makeStyles(() => ({
       color: COLORS.WHITE,
     },
   },
+  repoResults__accordionDescription: {
+    cursor: "pointer",
+  },
 }));
 
 export default useStyles;
