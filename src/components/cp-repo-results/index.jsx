@@ -18,7 +18,6 @@ const RepoResults = ({ repoData }) => {
     window.open(`${repoData.data.html_url}`, "_blank");
   };
 
-  console.log(repoData.data);
   return (
     <div className={styles.repoResults__container}>
       <div className={styles.repoResults__info}>
