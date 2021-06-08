@@ -35,7 +35,7 @@ const useStyles = makeStyles(() => ({
     padding: 10,
     alignItems: "center",
     "@media (max-width: 740px)": {
-      width: "80%",
+      width: "93%",
     },
   },
   searchPage__input: {

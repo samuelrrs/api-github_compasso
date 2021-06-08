@@ -102,7 +102,7 @@ const useStyles = makeStyles(() => ({
     gap: 60,
     "@media (max-width: 440px)": {
       gap: 20,
-      flexDirection: "column",
+      flexDirection: "row",
     },
   },
   resultsDetails__iconContainer: {
