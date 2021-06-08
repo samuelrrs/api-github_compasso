@@ -15,6 +15,7 @@ const useStyles = makeStyles(() => ({
     padding: 15,
     border: "1px solid",
     backgroundColor: COLORS.BG_TRANSPARENT,
+    margin: 8,
   },
   resultsDetails__userInfo: {
     display: "flex",
@@ -35,6 +36,9 @@ const useStyles = makeStyles(() => ({
   resultsDetails__fullName: {
     fontSize: 35,
     fontWeight: "bold",
+    "@media (max-width: 440px)": {
+      fontSize: 26,
+    },
   },
   resultsDetails__userName: {
     cursor: "pointer",
@@ -96,6 +100,10 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     justifyContent: "center",
     gap: 60,
+    "@media (max-width: 440px)": {
+      gap: 20,
+      flexDirection: "column",
+    },
   },
   resultsDetails__iconContainer: {
     display: "flex",

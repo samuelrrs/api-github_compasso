@@ -15,6 +15,9 @@ const useStyles = makeStyles(() => ({
     zIndex: 20,
     marginTop: "25px",
     fontWeight: "bold",
+    "@media (max-width: 440px)": {
+      fontSize: 20,
+    },
   },
   searchPage__containerForm: {
     display: "flex",

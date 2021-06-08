@@ -51,6 +51,10 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     justifyContent: "center",
     gap: 60,
+    "@media (max-width: 440px)": {
+      gap: 20,
+      flexDirection: "column",
+    },
   },
   repoResults__iconContainer: {
     display: "flex",
